@@ -1,0 +1,42 @@
+/* On fait le reset général de la page */
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* On cible le body pour centrer tous les éléments */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: sans-serif;
+    margin: 2rem;
+}
+/* On s'occupe du style de la grille */
+#grille {
+    display: grid;
+    grid-template-columns: repeat(3, 5rem);
+    grid-template-rows: repeat(3, 5rem);
+    gap: 1rem;
+    margin: 3rem auto;
+}
+/* On ajoute de la couleur sur les cases */
+.case {
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+/* On cible les paragraphes */
+p{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+/* On ajoute de la couleur sur le premier paragraphe */
+p:first-of-type {
+    color: lightseagreen;
+}
